@@ -9,6 +9,7 @@ function App() {
     <div className="demo-big-content">
       <Layout>
         <Header
+          className="header-color"
           title={
             <span>
               <span style={{ color: "#ddd" }}>Milan </span>
