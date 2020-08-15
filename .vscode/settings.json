@@ -1,6 +1,6 @@
 {
-    "cSpell.words": [
-        "Textfield",
-        "webfonts"
-    ]
+  "cSpell.words": ["Textfield", "webfonts"],
+  "files.associations": {
+    "*.js": "javascriptreact"
+  }
 }
