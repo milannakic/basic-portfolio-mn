@@ -8,6 +8,8 @@ import {
   Navigation,
   Content,
 } from "react-mdl";
+import Main from "./components/main";
+import { Link } from "react-router-dom";
 
 function App() {
   return (
@@ -16,27 +18,31 @@ function App() {
         <Header
           title={
             <span>
-              <span style={{ color: "#ddd" }}>Area / </span>
-              <strong>The Title</strong>
+              <span style={{ color: "#ddd" }}>Milan </span>
+              <strong>Nakic</strong>
             </span>
           }
         >
           <Navigation>
-            <a href="/">Link</a>
-            <a href="/">Link</a>
-            <a href="/">Link</a>
-            <a href="/">Link</a>
+            <Link to="/resume">Resume</Link>
+            <Link to="/about">About Me</Link>
+            <Link to="/projects">Project</Link>
+            <Link to="/contact">Contact</Link>
           </Navigation>
         </Header>
         <Drawer title="Title">
           <Navigation>
-            <a href="/">Link</a>
-            <a href="/">Link</a>
-            <a href="/">Link</a>
-            <a href="/">Link</a>
+            <Link to="/resume">Resume</Link>
+            <Link to="/about">About Me</Link>
+            <Link to="/projects">Project</Link>
+            <Link to="/contact">Contact</Link>
           </Navigation>
         </Drawer>
-        <Content />
+        <Content>
+          <div className="page-content">
+            <Main />
+          </div>
+        </Content>
       </Layout>
     </div>
   );
