@@ -1,20 +1,13 @@
 import React from "react";
 import "./App.css";
-import {
-  Layout,
-  Header,
-  Textfield,
-  Drawer,
-  Navigation,
-  Content,
-} from "react-mdl";
+import { Layout, Header, Drawer, Navigation, Content } from "react-mdl";
 import Main from "./components/main";
 import { Link } from "react-router-dom";
 
 function App() {
   return (
-    <div style={{ height: "300px", position: "relative" }}>
-      <Layout fixedHeader>
+    <div className="demo-big-content">
+      <Layout>
         <Header
           title={
             <span>
@@ -22,6 +15,7 @@ function App() {
               <strong>Nakic</strong>
             </span>
           }
+          scroll
         >
           <Navigation>
             <Link to="/resume">Resume</Link>
