@@ -12,6 +12,10 @@
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
+.header-color a {
+  text-decoration: none;
+}
+
 .landing-grid {
   background: #dae2f8; /* fallback for old browsers */
   background: -webkit-linear-gradient(
@@ -84,4 +88,15 @@
 
 .projects-grid {
   display: flex;
+  background: #dae2f8; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #d6a4a4,
+    #dae2f8
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #d6a4a4, #dae2f8);
+}
+
+.milan-nakic {
+  color: white;
 }

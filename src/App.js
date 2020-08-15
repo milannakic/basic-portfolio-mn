@@ -11,10 +11,11 @@ function App() {
         <Header
           className="header-color"
           title={
-            <span>
-              <span style={{ color: "#ddd" }}>Milan </span>
-              <strong>Nakic</strong>
-            </span>
+            <a href="/" className="milan-nakic">
+              <span>
+                Milan <strong>Nakic</strong>
+              </span>
+            </a>
           }
           scroll
         >
@@ -25,7 +26,7 @@ function App() {
             <Link to="/contact">Contact</Link>
           </Navigation>
         </Header>
-        <Drawer title="Title">
+        <Drawer title="MN">
           <Navigation>
             <Link to="/resume">Resume</Link>
             <Link to="/about">About Me</Link>
